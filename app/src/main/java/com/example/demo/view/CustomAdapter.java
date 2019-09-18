@@ -32,8 +32,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomViewHolder>{
 
     @Override
     public void onBindViewHolder(CustomViewHolder holder, int position) {
-        holder.tvUserId.setText(dataSet.get(position).mUserId);
-        holder.tvId.setText(dataSet.get(position).mId);
+        holder.tvUserId.setText(String.valueOf(dataSet.get(position).mUserId));
+        holder.tvId.setText(String.valueOf(dataSet.get(position).mId));
         holder.tvTitle.setText(dataSet.get(position).mTitle);
         holder.tvBody.setText(dataSet.get(position).mBody);
 

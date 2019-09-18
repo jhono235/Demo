@@ -2,6 +2,7 @@ package com.example.demo.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityContr
     public void initUi() {
         recyclerView = findViewById(R.id.rvMainActivity);
         recyclerView.setLayoutManager(new
-                GridLayoutManager(this, 4));
+                LinearLayoutManager(this));
         adapter = new CustomAdapter();
         recyclerView.setAdapter(adapter);
 
